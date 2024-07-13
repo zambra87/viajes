@@ -1,17 +1,32 @@
-body{
-    background-color: #000000;
+body {
+    background-color: #000000; /* Se ajusta el color del backgroud de la pagina*/
 }
 
 .text-shadow {
-    color: #0a0a0a; /* Color del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+    color: #0a0a0a;
+    /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Efecto de sombra */
 }
 
 .carousel-inner {
-    height: 700px; /* Se cambia el valor para que se ajuste a la pantalla completa */
-    
+    height: 700px;
+    /* Se cambia el valor para que se ajuste a la pantalla completa */
+
 }
 
-@media (max-width: 900px) { .carousel-inner { height: 400px; }}
+@media (max-width: 900px) {
+    .carousel-inner {
+        height: 400px;
+    }
+}
 
-@media (max-width: 500px) { .carousel-inner { height: 300px; }}
+/* Se ajusta el valor para que los botones se ajusten al tamaño del carousel en dispositivos moviles */
+
+@media (max-width: 500px) {
+    .carousel-inner {
+        height: 300px;
+    }
+}
+
+/* Se ajusta el valor para que los botones se ajusten al tamaño del carousel en dispositivos moviles */
