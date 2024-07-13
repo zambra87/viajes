@@ -1,0 +1,8 @@
+body{
+    background-color: #000000;
+}
+
+.carousel-inner {
+    height: 700px; /* Se cambia el valor para que se ajuste a la pantalla completa */
+}
+
