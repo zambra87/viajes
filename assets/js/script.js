@@ -1,6 +1,6 @@
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)) /* Se activan los popover*/
 
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 <script>
 $(document).ready(function() { /* Script para desplazamiento suave desde el menu */
@@ -17,3 +17,6 @@ $(document).ready(function() { /* Script para desplazamiento suave desde el menu
     });
 });
 </script>
+
+
+
