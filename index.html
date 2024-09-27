@@ -13,13 +13,13 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d9dc9a28ed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
+<body class="bg-dark">
 
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top text-shadow" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg fixed-top text-shadow mx-5" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24"
@@ -49,7 +49,7 @@
             </div>
         </nav>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide mx-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -82,41 +82,25 @@
         </div>
     </header>
 
-    <Section id="QuienesSomos" class="d-none d-sm-block">
+    <Section id="QuienesSomos">
         <h2 class="text-light text-center mt-5">Quienes Somos</h2>
-        <div class="container text-center text-light my-5">
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary my-2" data-bs-toggle="popover" type="button"
-                            data-bs-placement="top" data-bs-content="Presiona para más info">
-                            <i class="fa-solid fa-plane"></i>
-                        </button>
-                    </div>
+        <hr class="m-5 border border-light">
+        <div class="container text-center text-light">
+            <div class="container row">
+                <div class="d-none d-sm-block col-md-6">
+                    <img class="img-fluid" src="./assets/img/quienes-somos.jpg" alt="viajeschile">
+                </div>
+                <div class="col-sm-12 col-md-6 text-align-center text-start">
                     Descubre Chile desde las alturas con nuestros vuelos panorámicos. Disfruta de vistas impresionantes
                     de
                     la cordillera, lagos cristalinos y costas infinitas. Una experiencia única para los amantes de la
-                    aventura y la fotografía aérea
-                </div>
-                <div class="col">
+                    aventura y la fotografía aérea.
+                    <br><br>
                     Embárcate en una aventura inolvidable a través de los paisajes más salvajes de Chile. Nuestros
                     expertos
                     guías te llevarán a explorar senderos remotos, bosques milenarios y majestuosos glaciares. Prepárate
                     para conectar con la naturaleza en su estado más puro.
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary my-2" data-bs-toggle="popover" type="button"
-                            data-bs-placement="bottom" data-bs-content="Presiona para más info">
-                            <i class="fa-solid fa-mountain"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary my-2" data-bs-toggle="popover" type="button"
-                            data-bs-placement="top" data-bs-content="Presiona para más info">
-                            <i class="fa-solid fa-route"></i>
-                        </button>
-                    </div>
+                    <br><br>
                     Descubre Chile a tu propio ritmo con nuestras exclusivas rutas personalizadas. Desde el desierto más
                     árido del mundo hasta la Patagonia salvaje, cada ruta está diseñada para ofrecerte una experiencia
                     única, llena de cultura, historia y paisajes impresionantes..
@@ -125,51 +109,120 @@
         </div>
     </Section>
 
-    <Section id="Destacados" class="my-5">
+    <Section id="Destacados" class="m-5">
         <h2 class="text-light text-center my-5">Destacados</h2>
+        <hr class="border border-light">
         <div class="container text-center text-align-center">
             <div class="row justify-content-center align-items-end">
-                <div class="col">
-                    <div class="card my-2 text-bg-primary" style="width: 18rem;">
-                        <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Embárcate en una aventura épica en Torres del Paine. Descubre picos
-                                imponentes, glaciares centenarios y lagos de aguas turquesa en uno de los parques
-                                naturales
-                                más impresionantes del mundo.</p>
+                <div class="container row row-cols-2">
+                    <div class="col-12 col-lg-6">
+                        <div class="card m-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/img/card1.jpg" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="Torres">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Torres del Paine</h5>
+                                        <p class="card-text">Embárcate en una aventura épica en Torres del Paine.
+                                            Descubre picos
+                                            imponentes, glaciares centenarios y lagos de aguas turquesa en uno de los
+                                            parques
+                                            naturales
+                                            más impresionantes del mundo.</p>
+                                            <div class="row card-footer">
+                                                <div class="col">
+                                                    <i class="fa-regular fa-plane-up"></i>
+                                                    <span>Vuelos desde:</span>
+                                                </div>
+                                                <div class="col">
+                                                   <h5>$159.990</h5> 
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card my-2 text-bg-primary" style="width: 18rem;">
-                        <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Sumérgete en la magia de San Pedro de Atacama, donde el desierto más
-                                árido
-                                del planeta te espera con sus espectaculares paisajes de salares, géiseres y cielos
-                                estrellados que te dejarán sin aliento.</p>
+                    <div class="col-12 col-lg-6">
+                        <div class="card m-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/img/card2.jpg" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="Desierto">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Desierto de Atacama</h5>
+                                        <p class="card-text">Sumérgete en la magia de San Pedro de Atacama, donde el desierto más
+                                            árido
+                                            del planeta te espera con sus espectaculares paisajes de salares, géiseres y cielos
+                                            estrellados que te dejarán sin aliento.</p>
+                                            <div class="row card-footer">
+                                                <div class="col">
+                                                    <i class="fa-regular fa-plane-up"></i>
+                                                    <span>Vuelos desde:</span>
+                                                </div>
+                                                <div class="col">
+                                                   <h5>$189.990</h5> 
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card my-2 text-bg-primary" style="width: 18rem;">
-                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Vive una experiencia única en la Laguna Cejar, un oasis de aguas
-                                cristalinas y salinas que te invita a flotar como en el Mar Muerto. Disfruta de la
-                                serenidad
-                                y la belleza natural de este paraíso escondido.</p>
+                    <div class="col-12 col-lg-6">
+                        <div class="card m-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/img/card3.jpg" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="Norte">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Norte Grande de Chile</h5>
+                                        <p class="card-text">Vive una experiencia única en la Laguna Cejar, un oasis de aguas
+                                            cristalinas y salinas que te invita a flotar como en el Mar Muerto. Disfruta de la
+                                            serenidad
+                                            y la belleza natural de este paraíso escondido.</p>
+                                            <div class="row card-footer">
+                                                <div class="col">
+                                                    <i class="fa-regular fa-plane-up"></i>
+                                                    <span>Vuelos desde:</span>
+                                                </div>
+                                                <div class="col">
+                                                   <h5>$289.990</h5> 
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card my-2 text-bg-primary" style="width: 18rem;">
-                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Explora la exuberante Selva Valdiviana, un tesoro de biodiversidad en
-                                el
-                                sur de Chile. Déjate cautivar por sus densos bosques, cascadas majestuosas y una vida
-                                silvestre única que te conectará con la naturaleza en su estado más puro.</p>
+                    <div class="col-12 col-lg-6">
+                        <div class="card m-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./assets/img/card4.jpg" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="Bosque">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bosque Mágico</h5>
+                                        <p class="card-text">Explora la exuberante Selva Valdiviana, un tesoro de biodiversidad en
+                                            el
+                                            sur de Chile. Déjate cautivar por sus densos bosques, cascadas majestuosas y una vida
+                                            silvestre única que te conectará con la naturaleza.</p>
+                                            <div class="row card-footer">
+                                                <div class="col">
+                                                    <i class="fa-regular fa-plane-up"></i>
+                                                    <span>Vuelos desde:</span>
+                                                </div>
+                                                <div class="col">
+                                                   <h5>$259.990</h5> 
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,22 +230,102 @@
         </div>
     </Section>
 
-    <Section id="Contacto" class="my-5">
+    <section id="Testimonio" class="Testimonio">
+        <div class="container row">
+            <div class="Testimonio__Persona col-12 col-lg-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta fuga at ipsa harum placeat deserunt aspernatur, corporis accusamus similique, vitae facilis distinctio labore beatae quos, dolorem dolorum fugiat! Quia?</p>
+                <img class="Persona__Img" src="./assets/img/testimonio1.jpg" alt="Mariela">
+                <h5>Mariela</h5>
+            </div>
+            <div class="Testimonio__Persona col-12 col-lg-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta fuga at ipsa harum placeat deserunt aspernatur, corporis accusamus similique, vitae facilis distinctio labore beatae quos, dolorem dolorum fugiat! Quia?</p>
+                <img class="Persona__Img" src="./assets/img/testimonio2.jpg" alt="Mariela">
+                <h5>Christian</h5>
+            </div>
+            <div class="Testimonio__Persona col-12 col-lg-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta fuga at ipsa harum placeat deserunt aspernatur, corporis accusamus similique, vitae facilis distinctio labore beatae quos, dolorem dolorum fugiat! Quia?</p>
+                <img class="Persona__Img" src="./assets/img/testimonio3.jpg" alt="Mariela">
+                <h5>Fernanda</h5>
+            </div>
+        </div>
+
+    </section>
+
+    <Section id="Contacto" class="m-5">
         <h2 class="text-light text-center my-5">Contacto</h2>
-        <form class="text-light mx-5 px-5">
-            <div class="mb-3">
-                <label for="mb-3" class="form-label">Nombre</label>
-                <input type="text" class="form-control">
+        <hr class="border border-light m-5">
+        <div class="row d-flex">
+            <div class="col-12 col-lg-6">
+                <form class="text-light mx-5 px-5">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="mb-3" class="form-label">Nombre <i class="fa-regular fa-circle-info" data-bs-toggle="tooltip" data-bs-title="Ingresa Nombre"></i></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Email <i class="fa-regular fa-circle-info" data-bs-toggle="tooltip" data-bs-title="Ingresa email" ></i></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mensaje <i class="fa-regular fa-circle-info" data-bs-toggle="tooltip" data-bs-title="Ingresa mensaje"></i></label>
+                    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="my-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="acceptTerms" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                                <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Terminos y Condiciones</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-dark">
+          <p>Al usar esta aplicación, aceptas cumplir con los siguientes términos:
+            Uso: La aplicación es solo para fines informativos.
+            Propiedad: Todo el contenido es propiedad de [Nombre de la Empresa].
+            Responsabilidad: No nos hacemos responsables por daños resultantes del uso de la aplicación.
+            Modificaciones: Nos reservamos el derecho a modificar estos términos en cualquier momento.
+            Al hacer clic en "Aceptar", confirmas que has leído y aceptas estos términos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+                        <label class="form-check-label" for="acceptTerms">
+                          Acepto los <a href="#">términos y condiciones</a>.
+                        </label>
+                      </div>
+                      <button class="btn btn-light d-block" id="btnEnviar">
+                        Enviar
+                      </button>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Asunto</label>
-                <input type="text" class="form-control">
-            </div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-            <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="col-6 text-light mt-5 align-items-end">
+                <p><i class="fa-regular fa-phone"></i> +56999887766</p>
+                <p><i class="fa-regular fa-envelope"></i> contacto@viajeschile.com</p>
+                <p><i class="fa-brands fa-linkedin"></i> ViajesChile</p>
+                <p><i class="fa-brands fa-instagram"></i> viajes_chile</p>
+            
             </div>
-            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-        </form>
+
+        </div>
+       
     </section>
 
     <footer class="bg-dark text-light py-4">

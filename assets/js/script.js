@@ -2,21 +2,17 @@
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-<script>
-$(document).ready(function() { /* Script para desplazamiento suave desde el menu */
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-    $('.navbar-nav a').on('click', function(e) {
-        e.preventDefault();
-        
-        var target = $(this).attr('href');
-        
-        /* Desplazamiento suave animado hasta el elemento objetivo */
-        $('html, body').animate({
-            scrollTop: $(target).offset().top - 70 
-        }, 1000); /* 1 segundo de duracion */
-    });
-});
-</script>
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
 
 
-
+document.getElementById('btnEnviar').addEventListener('click', function() {
+    alert('Su mensaje fue enviado.');
+  });
