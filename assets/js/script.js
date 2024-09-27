@@ -1,3 +1,6 @@
+document.getElementById('btnEnviar').addEventListener('click', function() {
+    alert('Su mensaje fue enviado.');
+  });
 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
@@ -12,7 +15,3 @@ myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
 
-
-document.getElementById('btnEnviar').addEventListener('click', function() {
-    alert('Su mensaje fue enviado.');
-  });
